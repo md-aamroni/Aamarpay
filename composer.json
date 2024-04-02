@@ -1,0 +1,43 @@
+{
+    "name": "aamroni/aamarpay",
+    "description": "Aamarpay API Payment in Laravel",
+    "type": "library",
+    "license": "MIT",
+    "version": "1.0.0",
+    "autoload": {
+        "psr-4": {
+            "Aamroni\\Aamarpay\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "md-aamroni",
+            "email": "md.aamroni@gmail.com",
+            "role": "Software Developer | Tech Enthusiast"
+        }
+    ],
+    "require": {
+        "php": ">=8.2"
+    },
+    "require-dev": {
+        "laravel/pint": "^1.15",
+        "pestphp/pest": "^2.34"
+    },
+    "config": {
+        "allow-plugins": {
+            "pestphp/pest-plugin": true
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Aamroni\\Aamarpay\\Providers\\AamarpayServiceProvider"
+            ],
+            "aliases": {
+                "PayPal": "Aamroni\\Aamarpay\\Facades\\Aamarpay"
+            }
+        }
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}
